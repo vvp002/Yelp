@@ -58,8 +58,8 @@
                                                     <color key="textColor" red="0.40544871794871784" green="0.40544871794871784" blue="0.40544871794871784" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88 Division St, Mission Bay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7T-s5-dgd">
-                                                    <rect key="frame" x="90" y="50" width="164" height="16"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88 Division St, Mission Bay" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7T-s5-dgd">
+                                                    <rect key="frame" x="90" y="50" width="220" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -91,6 +91,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="bAJ-8a-CSs" secondAttribute="trailing" constant="8" id="EhP-wX-tug"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="chz-fk-Ciw" secondAttribute="bottom" constant="12" id="GCY-wv-uua"/>
                                                 <constraint firstAttribute="trailing" secondItem="ind-vb-qWs" secondAttribute="trailing" constant="8" id="HG5-kP-lqi"/>
+                                                <constraint firstAttribute="trailing" secondItem="e7T-s5-dgd" secondAttribute="trailing" constant="10" id="KAo-b1-ThH"/>
                                                 <constraint firstItem="e7T-s5-dgd" firstAttribute="leading" secondItem="4h4-m3-G6B" secondAttribute="trailing" constant="8" id="MLK-Gj-qId"/>
                                                 <constraint firstItem="8qb-0W-EIQ" firstAttribute="leading" secondItem="NKt-sE-wUe" secondAttribute="trailing" constant="8" id="Mg5-cZ-imm"/>
                                                 <constraint firstItem="e7T-s5-dgd" firstAttribute="top" secondItem="8qb-0W-EIQ" secondAttribute="bottom" constant="3" id="PWC-NV-Y1I"/>
@@ -163,4 +164,5 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
     </simulatedMetricsContainer>
+    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

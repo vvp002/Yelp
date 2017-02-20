@@ -31,6 +31,9 @@ class BusinessesViewController: UIViewController, UITableViewDelegate, UITableVi
         self.searchController = searchController // prevents optional from returning nil
         self.searchController.hidesNavigationBarDuringPresentation = false
         
+        self.navigationController?.navigationBar.barTintColor = UIColor.red
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        
         Business.searchWithTerm(term: "Thai", completion: { (businesses: [Business]?, error: Error?) -> Void in
             
             self.businesses = businesses
