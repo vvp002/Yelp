@@ -23,14 +23,20 @@ class BusinessesViewController: UIViewController, UITableViewDelegate, UITableVi
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 120
         
+        //searchController will use BusinessViewController to display search results
         let searchController: UISearchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
+        
+        //Disable dimming and have BusinessViewController be the presenting view controller
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
-        self.navigationItem.titleView = searchController.searchBar // place at top of navigation
-        self.searchController = searchController // prevents optional from returning nil
-        self.searchController.hidesNavigationBarDuringPresentation = false
         
+        //Places search bar in the navigation bar and prevent it from returning nil
+        self.navigationItem.titleView = searchController.searchBar
+        self.searchController = searchController
+        
+        //Disable hiding of search bar and change the color of the navigation bar to red and its title text to white
+        self.searchController.hidesNavigationBarDuringPresentation = false
         self.navigationController?.navigationBar.barTintColor = UIColor.red
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
